@@ -3,14 +3,12 @@ import ReactDOM from "react-dom";
 import * as Sentry from "@sentry/react";
 import { BrowserTracing } from "@sentry/tracing";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-// import CardTable from "./components/CardTable";
-// import FirebaseMessaging from "./config/initFirebase.js";
+import registerServiceWorker from './serviceWorkerRegistration';
 
 import "./index.scss";
 import Admin from "./layouts/Admin";
 // import Home from "social/Home";
 import Auth from "./layouts/Auth.js";
-// import { Example } from "../example";
 
 function FallbackComponent() {
   return <div>An error has occurred</div>;
@@ -56,3 +54,4 @@ Sentry.init({
 });
 
 ReactDOM.render(<App />, document.getElementById("app"));
+registerServiceWorker();

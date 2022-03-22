@@ -71,5 +71,18 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: path.resolve("./src/index.html"),
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/favicon.ico", to: "" },
+        { from: "./src/manifest.json", to: "" },
+        { from: "./src/diarium192.png", to: "" },
+        { from: "./src/diarium512.png", to: "" },
+        { from: "./src/apple-touch-icon.png", to: "" },
+      ],
+    }),
+    new InjectManifest({
+      swSrc: "./src/src-sw.js",
+      swDest: "sw.js",
+    }),
   ],
 };
