@@ -50,8 +50,8 @@ module.exports = {
       name: "mainapp",
       filename: "remoteEntry.js",
       remotes: {
-        mainapp: "https://dahboard-dev.vercel.app/remoteEntry.js",
-        social: "https://sosmed-dev.vercel.app/remoteEntry.js",
+        mainapp: "mainapp@https://dahboard-dev.vercel.app/remoteEntry.js",
+        social: "social@https://sosmed-dev.vercel.app/remoteEntry.js",
       },
       exposes: {
         "./CardTable": "./src/components/CardTable.js",
