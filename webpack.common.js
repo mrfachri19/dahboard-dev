@@ -7,7 +7,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "https://dahboard-dev.vercel.app/",
+    publicPath: "https://dashboard-dev.vercel.app/",
   },
 
   resolve: {
