@@ -3,6 +3,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const path = require("path");
 const { InjectManifest } = require("workbox-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 const deps = require("./package.json").dependencies;
 module.exports = {
@@ -83,6 +84,10 @@ module.exports = {
     new InjectManifest({
       swSrc: "./src/src-sw.js",
       swDest: "sw.js",
+    }),
+    new Dotenv({
+      path: "./.env", // Path to .env file (this is the default)
+      systemvars: true,
     }),
   ],
 };
