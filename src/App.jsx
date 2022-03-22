@@ -7,7 +7,7 @@ import registerServiceWorker from "./serviceWorkerRegistration";
 
 import "./index.scss";
 import Admin from "./layouts/Admin";
-// import Home from "social/Home";
+import Home from "social/Home";
 import Auth from "./layouts/Auth.js";
 
 
@@ -18,7 +18,7 @@ const App = () => (
         {/* add routes with layouts */}
         <Route path="/" component={Admin} />
         <Route path="/auth" component={Auth} />
-        {/* <Route path="/social" component={Home} /> */}
+        <Route path="/social" component={Home} />
         {/* add redirect for first page */}
         {/* <Redirect from="*" to="/admin" /> */}
       </Switch>
