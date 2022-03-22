@@ -7,7 +7,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "http://localhost:3005/",
+    publicPath: "https://dahboard-dev.vercel.app/",
   },
 
   resolve: {
@@ -50,8 +50,8 @@ module.exports = {
       name: "mainapp",
       filename: "remoteEntry.js",
       remotes: {
-        mainapp: "mainapp@http://localhost:3005/remoteEntry.js",
-        social: "social@http://localhost:3006/remoteEntry.js",
+        mainapp: "https://dahboard-dev.vercel.app/remoteEntry.js",
+        social: "https://sosmed-dev.vercel.app/remoteEntry.js",
       },
       exposes: {
         "./CardTable": "./src/components/CardTable.js",
