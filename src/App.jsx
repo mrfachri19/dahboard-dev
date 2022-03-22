@@ -10,15 +10,6 @@ import Admin from "./layouts/Admin";
 // import Home from "social/Home";
 import Auth from "./layouts/Auth.js";
 
-function FallbackComponent() {
-  return <div>An error has occurred</div>;
-}
-
-const myFallback = <FallbackComponent />;
-
-if (process.env.NODE_ENV !== "production") {
-  console.log("Looks like we are in development mode!");
-}
 
 const App = () => (
   <>
