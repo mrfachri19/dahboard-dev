@@ -1,4 +1,5 @@
 import React from "react";
+import Home from "mainapp/Home";
 
 export default function FooterAdmin() {
   return (
@@ -9,7 +10,7 @@ export default function FooterAdmin() {
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4">
               <div className="text-sm text-slate-500 font-semibold py-1 text-center md:text-left">
-                Copyright © {new Date().getFullYear()}{" "}
+                Copyright © {new Date().getFullYear()} <Home />
               </div>
             </div>
           </div>
