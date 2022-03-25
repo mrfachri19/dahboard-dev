@@ -8,7 +8,7 @@ const Dotenv = require("dotenv-webpack");
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "https://dashboard-dev.vercel.app/",
+    publicPath: "https://dahboard-dev.vercel.app/",
   },
 
   resolve: {
