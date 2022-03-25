@@ -158,7 +158,7 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/admin/tables") !== -1
+                    (window.location.href.indexOf("/social") !== -1
                       ? "text-blue-500 hover:text-blue-600"
                       : "text-slate-700 hover:text-slate-500")
                   }
