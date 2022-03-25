@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "mainapp/Home";
+import Home from "social/Home";
 
 export default function FooterAdmin() {
   return (
