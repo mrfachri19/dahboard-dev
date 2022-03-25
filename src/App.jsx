@@ -17,7 +17,7 @@ const App = () => (
         {/* add routes with layouts */}
         <Route path="/" component={Admin} />
         <Route path="/auth" component={Auth} />
-        <Route path="/social" component={Home} />
+        <Route path="/dashboard/social" component={Home} />
         {/* add redirect for first page */}
         {/* <Redirect from="*" to="/admin" /> */}
       </Switch>

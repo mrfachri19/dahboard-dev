@@ -162,7 +162,7 @@ export default function Sidebar() {
                       ? "text-blue-500 hover:text-blue-600"
                       : "text-slate-700 hover:text-slate-500")
                   }
-                  to="/social"
+                  to="/dashboard/social"
                 >
                   <i
                     className={
