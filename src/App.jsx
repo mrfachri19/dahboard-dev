@@ -21,7 +21,6 @@ const App = () => (
         <Route path="/social" component={Home} />
         {/* add redirect for first page */}
         {/* <Redirect from="*" to="/admin" /> */}
-        <Home />
       </Switch>
     </BrowserRouter>
   </>
